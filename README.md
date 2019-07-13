@@ -258,3 +258,132 @@ console.log(value3)
 </details>
 
 ---
+
+## Câu 11: Closure trong Javascript là gì?
+
+Dể hiểu, closure là 1 hàm nội truy cập đến các biến bên ngoài phạm vi của nó. Closure có thể được sử dụng để __implement privacy__ và tạo ra các __function factory__.
+
+#### Ví dụ:
+
+```javascript
+const arr = [1, 2, 3, 4];
+
+for (var i = 0; i < arr.length; i++) {
+  setTimeout(function() {
+    console.log(i);
+  }, 10);
+}
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>4</code><br />
+<code>4</code><br />
+<code>4</code><br />
+<code>4</code><br />
+
+Lý do là bởi vì hàm setTimeout sẽ tạo ra 1 function (closure) có thể truy cập phạm vi bên ngoài nó, vòng loop sẽ chứa index i. Sau 10ms, hàm được thực thi và nó sẽ log ra giá trị của i, là giá trị cuối cùng của vòng lặp (4).
+<p>
+</details>
+
+---
+
+## Câu 12: Hàm encodeURI() là gì?
+
+Hàm này mã hóa các ký tự đặc biệt, ngoại trừ :, /? : @ & = + $ #
+
+Để mã hóa ngược chuỗi đó lại mình sử dụng hàm __decodeURI()__.
+
+#### Ví dụ:
+
+```javascript
+var uri = "my test.asp?name=ståle&car=saab";
+var res = encodeURI(uri);
+
+console.log(res)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>my%20test.asp?name=st%C3%A5le&car=saab</code><br />
+<p>
+</details>
+
+---
+
+## Câu 13: Array() khác với [] như nào trong khi tạo ra một array trong JavaScript?
+
+Nếu sử dụng cách tạo array initializer nó sẽ tạo ra danh sách các phần tử trong mảng và được ngăn cách bởi dấu phẩy.
+
+#### Ví dụ:
+
+```javascript
+var arr1 = [5]
+var arr2 = new Array(5)
+
+console.log(arr1)
+console.log(arr2)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>[ 5 ]</code><br />
+<code>[ <5 empty items> ]</code>
+<p>
+</details>
+
+---
+
+## Câu 14: Strict mode trong JavaScript là gì?
+
+Strict theo nghĩa tiếng Việt là "nghiêm khắc". Strict Mode là một quy mẫu nghiêm khắc trong Javascript. Nếu như việc viết code bình thường là Normal mode, thì Strict Mode sẽ có thêm các quy định khác so với Normal mode. 
+
+#### Ví dụ:
+
+```javascript
+"use strict";
+
+function foo(){
+  var bar = 0;
+  return bar;
+}
+
+bar = 1;
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+Xảy ra lỗi:
+<code>ReferenceError: bar is not defined</code><br />
+<p>
+</details>
+
+---
+
+## Câu 15: Variable typing trong JavaScript là gì?
+
+JavaScript là một ngôn ngữ rất lỏng lẻo. Biến chỉ được xác định khi giá trị được gán và có thể thay đổi khi biến xuất hiện trong các ngữ cảnh khác nhau. Lên đơn giản nó là kiểu dữ liệu của biến đó.
+
+Để kiểm tra kiểu dữ liệu của biến đó ta dùng __typeof__ trong Javascript.
+
+#### Ví dụ:
+
+```javascript
+var length = 16;
+var lastName = "Johnson";
+var x = { firstName: "John", lastName: "Doe" };
+
+console.log(typeof length)
+console.log(typeof lastName)
+console.log(typeof x)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>number</code><br />
+<code>string</code><br />
+<code>object</code>
+<p>
+</details>
+
+---
