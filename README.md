@@ -789,3 +789,68 @@ console.log(age);
 </details>
 
 ---
+
+## Câu 31: Làm sao để chuyển đổi ngày trong Javascript thành tiêu chuẩn ISO?
+
+Hàm __toISOString()__ được sử dụng để chuyển đổi ngày javascript thành tiêu chuẩn ISO. Nó chuyển đổi đối tượng Ngày JavaScript thành một chuỗi, sử dụng tiêu chuẩn ISO.
+
+#### Ví dụ:
+
+```javascript
+var date = new Date();
+var n = date.toISOString();
+
+console.log(n);
+// YYYY-MM-DDTHH:mm:ss.sssZ
+```
+
+---
+
+## Câu 32: Cách đẻ clone một object trong Javascript?
+
+Hàm Object.assign() được sử dụng để clone một đối tượng trong Javascript. Ngoài ra bạn cũng có thể sử dụng clone của __lodash__. Lodash là một framework sử lý mạnh mẽ mảng và object. Xem thêm tại [Lodash](https://lodash.com/)
+
+#### Ví dụ:
+
+```javascript
+var x = { name: "Lyly" };
+var y = Object.assign({}, x); 
+
+console.log(y)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>{ name: 'Lyly' }</code><br />
+<p>
+</details>
+
+---
+
+## Câu 33: Cách để tạo mảng trong Javascript?
+
+Có 3 cách khác nhau để tạo mảng trong Javascript. Xem ví dụ
+
+#### Ví dụ:
+
+```javascript
+var arr1 = [1, 2, 3, 4];
+
+var arr2 = new Array();
+
+var arr3 = new Array(1, 2, 3, 4);
+
+console.log(arr1)
+console.log(arr2)
+console.log(arr3)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>[ 1, 2, 3, 4 ]</code><br />
+<code>[]</code><br />
+<code>[ 1, 2, 3, 4 ]</code>
+<p>
+</details>
+
+---
