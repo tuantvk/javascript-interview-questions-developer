@@ -703,3 +703,56 @@ console.log(
 </details>
 
 ---
+
+## Câu 28: Khác nhau giữa từ khóa `undefined` và `null` là gì?
+
+Khi bạn khởi tạo ra một biến nhưng không gán giá trị cho nó thì sẽ là __undefined__. Còn __null__ là một __object__.
+
+#### Ví dụ:
+
+```javascript
+var a;
+
+console.log(typeof a)
+console.log(typeof null)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>undefined</code><br />
+<code>object</code>
+<p>
+</details>
+
+---
+
+## Câu 29: Một số Framework để test Javascript là gì?
+
+Các framework phổ biến nhất hiện nay:
+
+- Unit.js
+- Jasmine
+- Karma
+- Chai
+- AVA
+- Mocha
+- JSUnit
+- QUnit
+- Jest
+
+#### Ví dụ:
+
+```javascript
+// Sử dụng Chai
+var answer = 43;
+
+expect(answer).to.equal(42);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>AssertionError: expected 43 to equal 42.</code><br />
+<p>
+</details>
+
+---
