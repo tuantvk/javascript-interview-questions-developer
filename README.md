@@ -756,3 +756,36 @@ expect(answer).to.equal(42);
 </details>
 
 ---
+
+## Câu 30: `export` và `import` là gì?
+
+__export__ hay __import__ là cách để ta tạo ra các module trong Javascript. Bằng cách đó, ta có thể chia các phần nhỏ trong dự án để dễ quản lý. __import__ cho phép ta lấy một số biến hoặc một phương thức nào đó của file. Còn __export__ là biến một file thành một module. Xem ví dụ để hiểu hơn.
+
+#### Ví dụ:
+
+```javascript
+// person.js
+
+let name = 'Lyly', occupation = 'developer', age = 20;
+
+export {
+  name,
+  age,
+}; 
+
+//index.js
+
+import { name, age } from './person';
+
+console.log(name);
+console.log(age);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>Lyly</code><br />
+<code>20</code>
+<p>
+</details>
+
+---
