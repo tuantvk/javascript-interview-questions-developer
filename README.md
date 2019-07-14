@@ -806,9 +806,9 @@ console.log(n);
 
 ---
 
-## Câu 32: Cách đẻ clone một object trong Javascript?
+## Câu 32: Cách để clone một object trong Javascript?
 
-Hàm Object.assign() được sử dụng để clone một đối tượng trong Javascript. Ngoài ra bạn cũng có thể sử dụng clone của __lodash__. Lodash là một framework sử lý mạnh mẽ mảng và object. Xem thêm tại [Lodash](https://lodash.com/)
+Hàm __Object.assign()__ được sử dụng để clone một đối tượng trong Javascript. Ngoài ra bạn cũng có thể sử dụng clone của __lodash__. Lodash là một framework sử lý mạnh mẽ mảng và object. Xem thêm tại [Lodash](https://lodash.com/)
 
 #### Ví dụ:
 
@@ -850,6 +850,42 @@ console.log(arr3)
 <code>[ 1, 2, 3, 4 ]</code><br />
 <code>[]</code><br />
 <code>[ 1, 2, 3, 4 ]</code>
+<p>
+</details>
+
+---
+
+## Câu 34: Các sự kiện chuột HTML DOM là gì?
+
+Một số sự kiện chuột trong DOM như:
+
+- onclick
+- ondblclick
+- mousemove
+- mousedown
+- mouseover
+- mouseout
+- mouseup
+
+---
+
+## Câu 35: Giá trị n ra màn hình là gì?
+
+#### Ví dụ:
+
+```javascript
+console.log(undefined * 2)
+
+console.log(null * 2)
+
+console.log("" * 2)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>NaN</code><br />
+<code>0</code><br />
+<code>0</code>
 <p>
 </details>
 
