@@ -869,7 +869,7 @@ Một số sự kiện chuột trong DOM như:
 
 ---
 
-## Câu 35: Giá trị n ra màn hình là gì?
+## Câu 35: Giá trị in ra màn hình là gì?
 
 #### Ví dụ:
 
@@ -886,6 +886,24 @@ console.log("" * 2)
 <code>NaN</code><br />
 <code>0</code><br />
 <code>0</code>
+<p>
+</details>
+
+---
+
+## Câu 36: Tại sao `018 - 017 = 3` trong Javascript?
+
+Việc 018 - 017 trả về 3 là kết quả của chuyển đổi loại im lặng. Trong trường hợp này, ta nói về số bát phân.
+
+#### Ví dụ:
+
+```javascript
+console.log(018 - 017)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>3</code><br />
 <p>
 </details>
 
