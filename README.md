@@ -606,3 +606,62 @@ Là một mảng 3 chiều
 </details>
 
 ---
+
+## Câu 25: `let` và `const` trong Javascript là gì?
+
+Từ khóa __let__ & __const__ được giới thiệu trong phiên bản ES6 với tầm nhìn tạo ra hai loại biến khác nhau trong javascript, một loại là bất biến và loại khác là có thể thay đổi.
+
+- __const__: Nó được sử dụng để tạo ra một biến bất biến. Biến không thay đổi là các biến có giá trị không bao giờ thay đổi trong vòng đời hoàn chỉnh của chương trình.
+
+- __let__: let được sử dụng để tạo một biến có thể thay đổi. Các biến có thể thay đổi là các biến bình thường như var có thể thay đổi bất kỳ số lượng thời gian nào.
+
+#### Ví dụ:
+
+```javascript
+let name  = "Lyly";
+
+const age = 18;
+
+name = "John";
+age = 20;
+
+console.log(name)
+console.log(age)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>John</code><br />
+<code>TypeError: Assignment to constant variable.</code>
+<p>
+</details>
+
+---
+
+## Câu 26: Làm sao để thêm hoặc xóa sửa trong object Javascript?
+
+Ta có thể thêm một thuộc tính vào một đối tượng bằng __object.property_name = value__, __delete object.property_name__ để xóa một thuộc tính.
+
+#### Ví dụ:
+
+```javascript
+let user = new Object();
+
+user.name = 'Lyly';
+user.age = 20;
+
+console.log(user);
+
+delete user.age;
+
+console.log(user);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>{ name: 'Lyly', age: 20 }</code><br />
+<code>{ name: 'Lyly' }</code>
+<p>
+</details>
+
+---
