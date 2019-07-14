@@ -9,6 +9,13 @@ Danh sách các ngôn ngữ khác:
 
 Let's go !!!
 
+
+## Câu 0: Javascript là gì?
+
+__JavaScript__, theo phiên bản hiện hành, là một ngôn ngữ lập trình thông dịch được phát triển từ các ý niệm nguyên mẫu. Ngôn ngữ này được dùng rộng rãi cho các trang web (phía người dùng) cũng như phía máy chủ (với __Nodejs__).
+
+---
+
 ## Câu 1: Sự khác nhau giữa JavaScript và JScript là gì?
 
 Đơn giản bạn có thể nói JScript giống như JavaScript, nhưng nó được cung cấp bởi Microsoft.
@@ -60,7 +67,6 @@ console.log('log 2: ', number1 === number2)
 
 ## Câu 4: Negative Infinity là gì?
 
-<code></code><br />
 __Negative Infinity__ là một số trong JavaScript có thể được bắt nguồn bằng cách chia số âm cho 0. Khi nào sử dung nó, khi nó là __một số__ hoặc __Number object__ và nó sẽ return về  __undefined__.
 
 #### Ví dụ:
@@ -383,6 +389,200 @@ console.log(typeof x)
 <code>number</code><br />
 <code>string</code><br />
 <code>object</code>
+<p>
+</details>
+
+---
+
+## Câu 16: Các kiểu dữ liệu trong Javascript là gì?
+
+Javascript có những kiểu dữ liệu sau:
+
+- Number
+- String
+- Boolean
+- Object
+- Undefined
+
+#### Ví dụ:
+
+```javascript
+var a = 5;
+var b = "Hello";
+var c = true;
+var d = { id: 1, name: "Lyly" };
+
+console.log(typeof a)
+console.log(typeof b)
+console.log(typeof c)
+console.log(typeof d)
+console.log(typeof e)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>number</code><br />
+<code>string</code><br />
+<code>boolean</code><br />
+<code>object</code><br />
+<code>undefined</code>
+<p>
+</details>
+
+---
+
+## Câu 17: `this` trong Javascript là gì?
+
+Từ khóa __this__ dùng để chỉ đối tượng từ nơi nó được gọi.
+
+#### Ví dụ:
+
+```javascript
+var Student = {
+  name: "Lyly",
+  age: 20,
+  getName: function(){
+      return this.name;
+  }
+};
+
+console.log(Student.getName())
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>Lyly</code><br />
+<p>
+</details>
+
+---
+
+## Câu 18: Khác nhau giữa ViewState và SessionState là gì?
+
+- __ViewState__ là dành riêng cho một trang trong phiên.
+
+- __SessionState__ dành riêng cho dữ liệu cụ thể của người dùng có thể được truy cập trên tất cả các trang trong ứng dụng web.
+
+---
+
+## Câu 19: Làm sao để thay đổi style/class của element?
+
+Có thể sử dụng document để thay đổi style/class.
+
+#### Ví dụ:
+
+```javascript
+document.getElementById("myId").style.fontSize = "20px";
+
+// or
+
+document.getElementById("myId").className = "newclass";
+```
+
+---
+
+## Câu 20: Các cấu trúc lặp trong Javascript là gì?
+
+Có các vòng lặp sau:
+
+- for
+- while
+- do-while loops
+
+#### Ví dụ:
+
+```javascript
+var arr = ["apple", "banana", "mango", "cherry"]
+
+// use for
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+// use while
+let j = 0;
+while (j < arr.length) {
+  console.log(arr[j]);
+  j++;
+}
+
+// use do-while loops
+let k = 0;
+do {
+  console.log(arr[k]);
+  k++;
+} while (k < arr.length)
+
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>cherry</code><br />
+<code>apple</code><br />
+<code>banana</code><br />
+<code>mango</code><br />
+<p>
+</details>
+
+---
+
+## Câu 21: Kết quả của `5 + 2 + "7"` là gì?
+
+Vì 3 và 2 là số nguyên, chúng sẽ cộng vào với nhau và kết quả là số. Còn 7 là một chuỗi, nên Javascipt sẽ hiểu thành nối chuỗi. Vì vậy, kết quả sẽ là 77.
+
+#### Ví dụ:
+
+```javascript
+console.log(5 + 2 + "7");
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>77</code><br />
+<p>
+</details>
+
+---
+
+## Câu 22: Chức năng của `delete` là gì?
+
+__delete__ dùng để xóa các property cũng như các giá trị.
+
+#### Ví dụ:
+
+```javascript
+var student = { name: 'Lyly', age: 20 };
+
+delete student.age;
+
+console.log(student)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>{ name: 'Lyly' }</code><br />
+<p>
+</details>
+
+---
+
+## Câu 23: Hàm `pop()` trong Javascript để làm gì?
+
+__pop()__ trong Javascript dùng để lấy phần tử cuối cùng trong mảng. Điều này thì trái ngược với hàm __shift()__.
+
+#### Ví dụ:
+
+```javascript
+var number = ["one", "two", "three", "four"]
+
+console.log(number.pop())
+console.log(number.shift())
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>four</code><br />
+<code>one</code>
 <p>
 </details>
 
