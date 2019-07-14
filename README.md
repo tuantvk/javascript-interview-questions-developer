@@ -494,19 +494,19 @@ Có các vòng lặp sau:
 ```javascript
 var arr = ["apple", "banana", "mango", "cherry"]
 
-// use for
+// Sử dụng for
 for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
 
-// use while
+// Sử dụng while
 let j = 0;
 while (j < arr.length) {
   console.log(arr[j]);
   j++;
 }
 
-// use do-while loops
+// Sử dụng do-while loops
 let k = 0;
 do {
   console.log(arr[k]);
@@ -661,6 +661,44 @@ console.log(user);
 <p>
 <code>{ name: 'Lyly', age: 20 }</code><br />
 <code>{ name: 'Lyly' }</code>
+<p>
+</details>
+
+---
+
+## Câu 27: Cách để xóa các phần tử giống nhau trong mảng sử dụng ES6?
+
+Dưới đây là một số cách:
+
+#### Ví dụ:
+
+```javascript
+var array = [1, 2, 6, 5, 3, 2, 6];
+
+// Sử dụng Set
+console.log(...new Set(array))
+
+// Sử dụng filter
+console.log(
+  array.filter((item , index ) => 
+    array.indexOf(item) === index 
+  )
+)
+
+// Sử dụng reduce
+console.log(
+  array.reduce((uniq, item) => 
+    uniq.includes(item) ? uniq : [...uniq, item], [] 
+  )
+)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code></code><br />
+<code>1 2 6 5 3</code><br />
+<code>[ 1, 2, 6, 5, 3 ]</code><br />
+<code>[ 1, 2, 6, 5, 3 ]</code>
 <p>
 </details>
 
