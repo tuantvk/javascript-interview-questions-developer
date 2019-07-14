@@ -587,3 +587,22 @@ console.log(number.shift())
 </details>
 
 ---
+
+## Câu 24: Kết quả in ra là gì?
+
+#### Ví dụ:
+
+```javascript
+var myArray = [[[]]];
+
+console.log(myArray)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+Là một mảng 3 chiều
+<code>[ [ [] ] ]</code><br />
+<p>
+</details>
+
+---
