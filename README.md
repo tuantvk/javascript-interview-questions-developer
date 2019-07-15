@@ -908,3 +908,33 @@ console.log(018 - 017)
 </details>
 
 ---
+
+## Câu 37: Phân biệt giữa test() và exec()?
+
+Cả __test()__ và __exec()__ đều là biểu thức __RegExp__. [Xem chi tiết](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
+- Sử dụng __test()__ sẽ search chuỗi trong theo giá trị ta truyền vô, nếu chuỗi đó tồn tại thì sẽ return về Boolean giá trị là 'true' hoặc 'false'.
+
+- Sử dụng __exec()__ sẽ search chuỗi trong theo giá trị ta truyền vô, nếu chuỗi đó tồn tại thì sẽ return về chuỗi đó, nếu không sẽ return về giá trị 'null'.
+
+#### Ví dụ:
+
+```javascript
+var str = "The best things in life are free";
+var patt = new RegExp("b");
+
+var res_test = patt.test(str);
+var res_exec = patt.exec(str);
+
+console.log(res_test)
+console.log(res_exec)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>true</code><br />
+<code>[ 'b', index: 4, input: 'The best things in life are free' ]</code>
+<p>
+</details>
+
+---
