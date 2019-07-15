@@ -1359,3 +1359,147 @@ console.log(eval(b))
 </details>
 
 ---
+
+## Câu 53: Ví dụ đơn giản để so sánh 2 object với nhau?
+
+Để so sánh 2 object có khá nhiều cách khác nhau. Tuy nhiên có một cách rất đơn giản đó là parse qua JSON bằng cách sử dụng __JSON.sstringify()__.
+
+#### Ví dụ:
+
+```javascript
+var user1 = { name: "Lyly", org: "dev" };
+var user2 = { name: "Lyly", org: "dev" };
+
+var dog = { name: "dog", age: 10 };
+var cat = { name: "cat", age: 10 };
+
+var compare_user = JSON.stringify(user1) === JSON.stringify(user2);
+var compare_animal = JSON.stringify(dog) === JSON.stringify(cat);
+
+console.log(compare_user);
+console.log(compare_animal);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>true</code><br />
+<code>false</code>
+<p>
+</details>
+
+---
+
+## Câu 54:  Khác nhau giữa parameter và argument là gì?
+
+Các __parameter__ là tên biến của định nghĩa hàm, trong khi các __argument__ là các giá trị được cung cấp cho hàm khi nó được gọi.
+
+#### Ví dụ:
+
+```javascript
+function myFunction(parameter1, parameter2) {
+  console.log(arguments[0])
+}
+myFunction("argument1", "argument2")
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>argument1</code><br />
+<p>
+</details>
+
+---
+
+## Câu 55: Kêt quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+const a = [1, 2, 3]
+const b = [1, 2, 3]
+const c = "1,2,3"
+
+console.log(a == c)
+console.log(a == b)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>true</code><br />
+<code>false</code><br /><br />
+console.log đầu tiên sẽ trả về là đúng vì trình biên dịch của JavaScript thực hiện chuyển đổi type của biến và do đó, nó so sánh với các chuỗi theo giá trị của chúng. Mặt khác, console.log thứ hai sẽ trả về sai vì Mảng là object và object được so sánh bằng tham chiếu.
+<p>
+</details>
+
+---
+
+## Câu 56: Kêt quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+function greet() {
+  return
+  {
+    message: "hello"
+  }
+}
+
+var a = greet();
+
+console.log(a)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>undefined</code><br /><br />
+Do tính năng chèn dấu chấm phẩy tự động (ASI) của JavaScript, trình biên dịch đặt dấu chấm phẩy sau từ khóa trả về và do đó, nó trả về undefined mà không bị lỗi.
+<p>
+</details>
+
+---
+
+## Câu 57: Kêt quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+console.log(typeof typeof 0);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>string</code><br /><br />
+Do typeof 0 là "number" nên typeof của "number" sẽ là chuỗi. Javascript thật đáng sợ !!!
+<p>
+</details>
+
+---
+
+## Câu 58: Kể tên một số thư viện Javascript xử lí array và object?  
+
+Có 2 thư viện xử lí array và object nổi tiếng nhất hiện nay là:
+
+- lodash [Xem chi tiết](https://lodash.com/)
+- underscore.js [Xem chi tiết](https://underscorejs.org/)
+
+#### Ví dụ:
+
+```javascript
+// underscore.js
+_.map([1, 2, 3], num => num * 3);
+
+// lodash
+_.map([4, 8], x => x * 2);
+
+// Cách sử dụng khá giống nhau
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>[3, 6, 9]</code><br />
+<code>[8, 16]</code>
+<p>
+</details>
+
+---
