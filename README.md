@@ -970,7 +970,7 @@ Khi có setTimeout() tiến trình trở thành bất đồng bộ. Ta cần ch�
 Có những cách sau:
 
 - __getElementById()__ lấy một element bằng tên __id__.
-- __getElementsByClass() lấy một element bằng tên __class__.
+- __getElementsByClass()__ lấy một element bằng tên __class__.
 - __getElementsByTagName()__ lấy một element bằng tên của __tag name__.
 - __querySelector()__ đây là function css style selector và sẽ return về giá trị đầu tiên.
 
