@@ -938,3 +938,136 @@ console.log(res_exec)
 </details>
 
 ---
+
+## Câu 38: Kết quả in ra là gì?
+
+#### Ví dụ:
+
+```javascript
+setTimeout(function () {
+  console.log('first line');
+}, 0);
+
+console.log('second line');
+
+console.log('third line');
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>second line</code><br />
+<code>third line</code><br />
+<code>first line</code>
+
+Khi có setTimeout() tiến trình trở thành bất đồng bộ. Ta cần chờ mọi thứ trong stack hoàn thành trước.
+<p>
+</details>
+
+---
+
+## Câu 39: Các cách để accessed vào HTML element trong Javascript?
+
+Có những cách sau:
+
+- __getElementById()__ lấy một element bằng tên __id__.
+- __getElementsByClass() lấy một element bằng tên __class__.
+- __getElementsByTagName()__ lấy một element bằng tên của __tag name__.
+- __querySelector()__ đây là function css style selector và sẽ return về giá trị đầu tiên.
+
+#### Ví dụ:
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to change the text in this paragraph.</p>
+<p class="demo">Click the button to change the text in this paragraph.</p>
+<h5>Click the button to change the text in this paragraph.</h5>
+<p class="example">Click the button to change the text in this paragraph.</p>
+
+<script>
+  // Sử dụng getElementById()
+  document.getElementById("demo").innerHTML = "Hello World";
+  
+  // Sử dụng getElementsByClassName()
+  document.getElementsByClassName("demo")[0].innerHTML = "Hello World!";
+  
+  // Sử dụng getElementsByTagName()
+  document.getElementsByTagName("h5")[0].innerHTML = "Hello World!";
+  
+  // Sử dụng querySelector()
+  document.querySelector(".example").style.backgroundColor = "red";
+</script>
+
+</body>
+</html>
+```
+
+---
+
+## Câu 40: Có mấy cách sử dụng Javscript trong HTML?
+
+Có 3 cách sau:
+
+- Inline
+- Internal
+- External
+
+#### Ví dụ:
+
+```html
+<!-- Inline -->
+<a href="#" onclick="(function(){alert('Hello world');})()">Click Me</a>
+
+<!-- Internal -->
+<script>
+console.log('Hello world')
+</script>
+
+<!-- External -->
+<script type="text/javascript" src="external.js">
+
+// file external.js
+console.log('Hello world')
+```
+
+---
+
+## Câu 41: Mốt số framework UI của Javascript là gì?
+
+Một số framework UI nổi tiếng của Javascript hiện nay là:
+
+- React
+- Angular
+- Vue
+- Meteor
+- Ember
+
+#### Ví dụ:
+
+```javascript
+// React
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  document.getElementById('hello-example')
+);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>Hello Taylor</code><br />
+<p>
+</details>
+
+---
