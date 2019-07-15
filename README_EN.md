@@ -17,6 +17,10 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://github.com/tuantvk/javascript-interview-questions-developer/blob/master/assets/background.png" alt="background" />
+<p>
+
 These theories give you a list of frequently asked JavaScript interview questions with answers for beginners. The questions aren't arranged in difficult order, you can go through everything to challenge yourself.
 
 If you have a good JavaScript interview question, share it with everyone by creating **issue** or **pull request** for me :rocket:.

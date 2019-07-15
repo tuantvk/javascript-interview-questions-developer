@@ -1,5 +1,13 @@
 # ChangeLog
 
+## [v0.0.4] 2019-07-16
+
+### Added
+
+- Update doc new
+
+
+
 ## [v0.0.3] 2019-07-15
 
 ### Added
@@ -11,6 +19,7 @@
 ### Fixed
 
 - Update content question 39
+
 
 
 ## [v0.0.2] 2019-07-14
