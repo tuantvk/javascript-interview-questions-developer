@@ -1270,3 +1270,90 @@ console.log(message);
 </details>
 
 ---
+
+## Câu 49: Làm thể nào để nhận notification từ server-send? 
+
+Ta có thể sử dụng __EventSource__ để nhận thông báo sự kiện do máy chủ gửi. [Xem chi tiết EventSource](https://developer.mozilla.org/en-US/docs/Web/API/EventSource)
+
+#### Ví dụ:
+
+```javascript
+// Ví dụ mẫu
+if (typeof (EventSource) !== "undefined") {
+  var source = new EventSource("sse_generator.js");
+  source.onmessage = function (event) {
+    document.getElementById("output").innerHTML += event.data + "<br>";
+  };
+}
+```
+
+---
+
+## Câu 50: `Promise.all` trong Javascript là gì?
+
+__Promise.all__ là một hàm sẽ lấy một loạt các Promises làm đầu vào (có thể lặp lại). Phương thức này nhận vào một mảng các promises và chỉ resolve khi tất cả các promises này hoàn thành, hoặc reject khi một trong số chúng xảy ra lỗi. 
+
+#### Ví dụ:
+
+```javascript
+Promise.all([Promise1, Promise2, Promise3])
+  .then(result => {
+    console.log(result);
+  })
+  .catch(error => {
+    console.log(`Error in promises ${error}`);
+  })
+```
+
+---
+
+## Câu 51: `Promise.race` trong Javascript là gì?
+
+Promise.race nghĩa là hàm promise chạy đua (LOL). Phương thức này nhận vào một mảng các promises và sẽ resolve/reject ngay khi một trong số các promises này hoàn thành/xảy ra lỗi.
+
+#### Ví dụ:
+
+```javascript
+var promise1 = new Promise(function (resolve, reject) {
+  setTimeout(resolve, 500, 'one');
+});
+
+var promise2 = new Promise(function (resolve, reject) {
+  setTimeout(resolve, 100, 'two');
+});
+
+Promise.race([promise1, promise2]).then(function (value) {
+  console.log(value);
+});
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>two</code><br />
+<p>
+</details>
+
+---
+
+## Câu 52: Hàm eval() trong Javascript là gì?
+
+Hàm __eval()__ dùng để tính toán một chuỗi trong Javascript. Nó sẽ nhận vào một chuỗi và biến nó qua phép tính. Chuỗi có thể là biểu thức JavaScript, biến, câu lệnh hoặc chuỗi câu lệnh.
+
+#### Ví dụ:
+
+```javascript
+var a = "1 + 5 - 3";
+var b = "10 / 2" + 6;
+
+console.log(eval(a))
+console.log(eval(b))
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>3</code><br />
+<code>0.38461538461538464</code>
+<p>
+</details>
+
+---
