@@ -1410,7 +1410,7 @@ myFunction("argument1", "argument2")
 
 ---
 
-## Câu 55: Kêt quả trả về là gì?
+## Câu 55: Kết quả trả về là gì?
 
 #### Ví dụ:
 
@@ -1433,7 +1433,7 @@ console.log đầu tiên sẽ trả về là đúng vì trình biên dịch củ
 
 ---
 
-## Câu 56: Kêt quả trả về là gì?
+## Câu 56: Kết quả trả về là gì?
 
 #### Ví dụ:
 
@@ -1459,7 +1459,7 @@ Do tính năng chèn dấu chấm phẩy tự động (ASI) của JavaScript, tr
 
 ---
 
-## Câu 57: Kêt quả trả về là gì?
+## Câu 57: Kết quả trả về là gì?
 
 #### Ví dụ:
 
