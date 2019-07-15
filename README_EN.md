@@ -2,6 +2,21 @@
 
 ## Need contributor translate
 
+<p align="center">
+  <a href="https://github.com/tuantvk/javascript-interview-questions-developer/issues">
+    <img src="https://img.shields.io/github/issues/tuantvk/javascript-interview-questions-developer.svg" alt="issues" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/github/forks/tuantvk/javascript-interview-questions-developer.svg" alt="forks" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/github/stars/tuantvk/javascript-interview-questions-developer.svg" alt="stars" />
+  </a>
+  <a href="https://github.com/tuantvk/javascript-interview-questions-developer/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/tuantvk/javascript-interview-questions-developer.svg" alt="LICENSE" />
+  </a>
+</p>
+
 These theories give you a list of frequently asked JavaScript interview questions with answers for beginners. The questions aren't arranged in difficult order, you can go through everything to challenge yourself.
 
 If you have a good JavaScript interview question, share it with everyone by creating **issue** or **pull request** for me :rocket:.

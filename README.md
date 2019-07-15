@@ -1,5 +1,20 @@
 # Danh sách những câu hỏi trong phỏng vấn Javascript
 
+<p align="center">
+  <a href="https://github.com/tuantvk/javascript-interview-questions-developer/issues">
+    <img src="https://img.shields.io/github/issues/tuantvk/javascript-interview-questions-developer.svg" alt="issues" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/github/forks/tuantvk/javascript-interview-questions-developer.svg" alt="forks" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/github/stars/tuantvk/javascript-interview-questions-developer.svg" alt="stars" />
+  </a>
+  <a href="https://github.com/tuantvk/javascript-interview-questions-developer/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/tuantvk/javascript-interview-questions-developer.svg" alt="LICENSE" />
+  </a>
+</p>
+
 Những lý thuyết này cung cấp cho bạn danh sách các câu hỏi phỏng vấn JavaScript thường được hỏi với câu trả lời cho người mới bắt đầu. Các câu hỏi không sắp xếp theo thứ tự khó dần lên bạn có thể lướt hết qua mọi thứ để thử thách bản thân mình.
 
 Nếu bạn có câu hỏi phỏng vấn JavaScript nào hay thì chia sẻ cho mọi người bằng cách bằng cách tạo **issue** hoặc **pull request** cho mình :rocket:.
