@@ -14,11 +14,11 @@ Let's go !!!
 
 ## Câu 0: What is Javascript?
 
-__JavaScript__, according to the current version, is an interpreted programming language developed from prototype ideas. This language is widely used for website (user side) as well as server side (with __Nodejs__)
+__JavaScript__, according to the current version, is an interpreted programming language developed from prototype ideas. This language is widely used for website (client-side) as well as server-side (use __Nodejs__)
 
 ---
 
-## Câu 1: What is the difference between JavanScript and JScript?
+## Câu 1: What is the difference between JavaScript and JScript?
 
 Simply, you can say JScript same as JavaScript but it is provided by Microsoft
 
@@ -1069,6 +1069,205 @@ ReactDOM.render(
 <details><summary><b>Đáp án:</b></summary>
 <p>
 <code>Hello Taylor</code><br />
+<p>
+</details>
+
+---
+
+## Câu 42: Kết quả in ra là gì?
+
+#### Ví dụ:
+
+```javascript
+var a = (! +[] + [] + ![])
+
+console.log(a.length)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>9</code><br />
+Đây là điều thú vị của Javascript.
+<p>
+</details>
+
+---
+
+## Câu 43: Sự khác nhau giữa .forEach và .map trong Javascript là gì?
+
+`.forEach`
+
+- Vòng lặp dựa vào các phần tử có trong mảng.
+- Thực hiện callback cho mỗi vòng lặp.
+- Không trả về giá trị.
+
+`.map`
+
+- Vòng lặp dựa vào các phần tử có trong mảng.
+- Hàm map sẽ lặp qua từng phần tử nhưng sẽ tạo ra một mảng mới dựa trên các giá trị trong vòng lặp.
+
+
+#### Ví dụ:
+
+```javascript
+const a = [1, 2, 3];
+
+const ex1 = a.forEach((num, index) => {
+  // Làm 1 điều gì đó
+});
+
+const ex2 = a.map(num => {
+  return num * 2;
+});
+
+console.log(ex1)
+console.log(ex2)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>undefined</code><br />
+<code>[ 2, 4, 6 ]</code>
+<p>
+</details>
+
+---
+
+## Câu 44: JSON là gì và cách sử dụng?
+
+JSON là một định dạng dữ liệu dựa trên văn bản theo cú pháp đối tượng JavaScript.
+
+#### Ví dụ:
+
+```javascript
+// Chuyển object qua JSON
+var obj1 = [{ id: 1, name: 'Lyly' }, { id: 2, name: 'May' }];
+
+console.log(JSON.stringify(obj1))
+
+// Chuyển JSON về object
+var obj2 = '{ "id": 9, "name": "Lyly", "age": "20", "city": "New York" }'
+
+console.log(JSON.parse(obj2))
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>[{"id":1,"name":"Lyly"},{"id":2,"name":"May"}]</code><br />
+<code>{ id: 9, name: 'Lyly', age: '20', city: 'New York' }</code>
+<p>
+</details>
+
+---
+
+## Câu 45: Sự khác nhau giữa `slice` và `splice` là gì?
+
+| slice  | splice |
+| --- | --- |
+| Không làm thay đổi mảng ban đầu  | Có thể bị thay đổi mảng ban đầu  |
+| Trả về tập hợp con của mảng ban đầu  | Trả về các phần tử bị xóa khỏi mảng ban đầu  |
+| Sử dụng để lấy các phần tử con trong mảng  | Sử dụng để thêm hoặc xóa phần tử của mảng  |
+
+#### Ví dụ:
+
+```javascript
+// Sử dụng slice
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+
+var citrus = fruits.slice(1, 3);
+
+console.log(fruits)
+console.log(citrus)
+
+// Sử dụng splice
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+console.log(fruits)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>[ 'Banana', 'Orange', 'Lemon', 'Apple', 'Mango' ]</code><br />
+<code>[ 'Orange', 'Lemon' ]</code><br /><br />
+<code>[ 'Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango' ]</code>
+<p>
+</details>
+
+---
+
+## Câu 46: Higher order function trong Javascript là gì?
+
+Higher order function là hàm chấp nhận hàm khác làm đối số hoặc trả về hàm dưới dạng giá trị trả về.
+
+#### Ví dụ:
+
+```javascript
+const higherOrderFunc = () => console.log("Hello world !");
+
+const higherOrder = ReturnHigherOrderFunc => ReturnHigherOrderFunc();
+
+higherOrder(higherOrderFunc);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>Hello world !</code><br />
+<p>
+</details>
+
+---
+
+## Câu 47: Hàm `unary` trong Javascript là gì?
+
+Hàm __unary__ (monadic) là một hàm chấp nhận chính xác một đối số. Nó là viết tắt của một đối số được chấp nhận bởi một hàm.
+
+#### Ví dụ:
+
+```javascript
+const unaryFunction = a => console.log(a + 10);
+
+unaryFunction(5)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>15</code><br />
+<p>
+</details>
+
+---
+
+## Câu 48: IIFE (Immediately Invoked Function Expression) trong Javascript là gì?
+
+__IIFE (Immediately Invoked Function Expression)__ là một hàm JavaScript chạy ngay khi được định nghĩa.
+
+Lý do chính để sử dụng IIFE là để có được quyền riêng tư dữ liệu vì bất kỳ biến nào được khai báo trong IIFE đều không thể được truy cập bởi bên ngoài. Tức là, nếu bạn cố gắng truy cập các biến bằng IIFE thì nó sẽ xuất hiện một lỗi như dưới đây:
+
+#### Ví dụ:
+
+```javascript
+// Ví dụ IIFE
+(function () {
+  // logic here
+}
+)();
+
+// Báo lỗi khi chạy
+(function () {
+  var message = "IIFE";
+  console.log(message);
+}
+)();
+
+console.log(message);
+
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>ReferenceError: message is not defined</code><br />
 <p>
 </details>
 

@@ -1194,3 +1194,79 @@ console.log(fruits)
 </details>
 
 ---
+
+## Câu 46: Higher order function trong Javascript là gì?
+
+Higher order function là hàm chấp nhận hàm khác làm đối số hoặc trả về hàm dưới dạng giá trị trả về.
+
+#### Ví dụ:
+
+```javascript
+const higherOrderFunc = () => console.log("Hello world !");
+
+const higherOrder = ReturnHigherOrderFunc => ReturnHigherOrderFunc();
+
+higherOrder(higherOrderFunc);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>Hello world !</code><br />
+<p>
+</details>
+
+---
+
+## Câu 47: Hàm `unary` trong Javascript là gì?
+
+Hàm __unary__ (monadic) là một hàm chấp nhận chính xác một đối số. Nó là viết tắt của một đối số được chấp nhận bởi một hàm.
+
+#### Ví dụ:
+
+```javascript
+const unaryFunction = a => console.log(a + 10);
+
+unaryFunction(5)
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>15</code><br />
+<p>
+</details>
+
+---
+
+## Câu 48: IIFE (Immediately Invoked Function Expression) trong Javascript là gì?
+
+__IIFE (Immediately Invoked Function Expression)__ là một hàm JavaScript chạy ngay khi được định nghĩa.
+
+Lý do chính để sử dụng IIFE là để có được quyền riêng tư dữ liệu vì bất kỳ biến nào được khai báo trong IIFE đều không thể được truy cập bởi bên ngoài. Tức là, nếu bạn cố gắng truy cập các biến bằng IIFE thì nó sẽ xuất hiện một lỗi như dưới đây:
+
+#### Ví dụ:
+
+```javascript
+// Ví dụ IIFE
+(function () {
+  // logic here
+}
+)();
+
+// Báo lỗi khi chạy
+(function () {
+  var message = "IIFE";
+  console.log(message);
+}
+)();
+
+console.log(message);
+
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>ReferenceError: message is not defined</code><br />
+<p>
+</details>
+
+---
