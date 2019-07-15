@@ -2,9 +2,9 @@
 
 ## Need contributor translate
 
-Những lý thuyết này cung cấp cho bạn danh sách các câu hỏi phỏng vấn JavaScript thường được hỏi với câu trả lời cho người mới bắt đầu. Các câu hỏi không sắp xếp theo thứ tự khó dần lên bạn có thể lướt hết qua mọi thứ để thử thách bản thân mình.
+These theories give you a list of frequently asked JavaScript interview questions with answers for beginners. The questions aren't arranged in difficult order, you can go through everything to challenge yourself.
 
-Nếu bạn có câu hỏi phỏng vấn JavaScript nào hay thì chia sẻ cho mọi người bằng cách bằng cách tạo **issue** hoặc **pull request** cho mình :rocket:.
+If you have a good JavaScript interview question, share it with everyone by creating **issue** or **pull request** for me :rocket:.
 
 List of available languages:
 * [Vietnamese](./README.md)
@@ -12,28 +12,28 @@ List of available languages:
 Let's go !!!
 
 
-## Câu 0: Javascript là gì?
+## Câu 0: What is Javascript?
 
-__JavaScript__, theo phiên bản hiện hành, là một ngôn ngữ lập trình thông dịch được phát triển từ các ý niệm nguyên mẫu. Ngôn ngữ này được dùng rộng rãi cho các trang web (phía người dùng) cũng như phía máy chủ (với __Nodejs__).
-
----
-
-## Câu 1: Sự khác nhau giữa JavaScript và JScript là gì?
-
-Đơn giản bạn có thể nói JScript giống như JavaScript, nhưng nó được cung cấp bởi Microsoft.
+__JavaScript__, according to the current version, is an interpreted programming language developed from prototype ideas. This language is widely used for website (user side) as well as server side (with __Nodejs__)
 
 ---
 
-## Câu 2: Trong javascript đối tượng window được sử dụng để làm gì?
+## Câu 1: What is the difference between JavanScript and JScript?
 
-Đối tượng window được tạo tự động bởi trình duyệt đại diện cho một cửa sổ trình duyệt. Nó được sử dụng để hiển thị hộp thoại bật lên như hộp thoại alert, confirm, v.v. và mọi thứ trong Javascript như __object, functions, variables__ đều có thể trở thành __window object__ bao gồm cả __HTML DOM__.
+Simply, you can say JScript same as JavaScript but it is provided by Microsoft
 
-<details><summary><b>Ví dụ:</b></summary>
+---
+
+## Câu 2: In javascript what is the window object used for?
+
+The window object is automatically created by the browser representing a browser window. This is used to display dialog box that pops up like alert, confirm , v.v. and everything in Javascript as __object, functions, variables__ can all become __window object__ including __HTML DOM__.
+
+<details><summary><b>Example:</b></summary>
 <p>
 <code>
 window.document.getElementById("header");
 </code><br />
-hoặc:
+or:
 <br />
 <code>
 document.getElementById("header");
@@ -48,7 +48,7 @@ document.getElementById("header");
 
 Toán tử __==__ chỉ kiểm tra tính bằng nhau, còn __===__ kiểm tra tính bằng nhau và giá trị kiểu dữ liệu tức là phải cùng kiểu dữ liệu.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var number1 = 12;
@@ -71,7 +71,7 @@ console.log('log 2: ', number1 === number2)
 
 __Negative Infinity__ là một số trong JavaScript có thể được bắt nguồn bằng cách chia số âm cho 0. Khi nào sử dung nó, khi nó là __một số__ hoặc __Number object__ và nó sẽ return về  __undefined__.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var my_number = 100;
@@ -92,7 +92,7 @@ console.log(my_number)
 
 Sử dụng khối __try/catch__, chúng ta có thể xử lý các ngoại lệ trong JavaScript. JavaScript hỗ trợ các từ khóa try, catch, finally, throw để xử lý ngoại lệ.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 function check(x) {
@@ -130,7 +130,7 @@ console.log(check(55))
 
 Hàm __isNaN()__ trả về true nếu giá trị của biến __không phải__ là một số.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 console.log(isNaN(123))
@@ -163,7 +163,7 @@ hoặc
 
 sử dụng __/* nội dung */__ cho nhiều dòng
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 // Khai báo biến
@@ -189,7 +189,7 @@ Vấn đề này liên quan đến việc Javascript lưu trữ dữ liệu floa
 - __Mẹo nhỏ__ là nhân với 10 và chia cho 10
 - Tham khảo các hàm làm tròn như __round()__, v.v.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 console.log(0.1 + 0.2)
@@ -217,7 +217,7 @@ console.log(number.toFixed(2))
 
 __Function declaration__ sử dụng từ khóa function rồi đến tên hàm. Còn __Function expression__ bắt đầu bằng __var__, __let__ hoặc __const__, theo sau là tên của hàm và toán tử __=__.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 // Function Declaration
@@ -242,7 +242,7 @@ Khi chạy code __Math.max() > Math.min()__, giá trị trả về là __False__
 
 Nếu tham số xuất hiện là infinity và một số nào khác, kết quả trả về sẽ là số có giá trị đó.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var infinity = 5
@@ -271,7 +271,7 @@ console.log(value3)
 
 Dể hiểu, closure là 1 hàm nội truy cập đến các biến bên ngoài phạm vi của nó. Closure có thể được sử dụng để __implement privacy__ và tạo ra các __function factory__.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 const arr = [1, 2, 3, 4];
@@ -302,7 +302,7 @@ Hàm này mã hóa các ký tự đặc biệt, ngoại trừ :, /? : @ & = + $ 
 
 Để mã hóa ngược chuỗi đó lại mình sử dụng hàm __decodeURI()__.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var uri = "my test.asp?name=ståle&car=saab";
@@ -323,7 +323,7 @@ console.log(res)
 
 Nếu sử dụng cách tạo array initializer nó sẽ tạo ra danh sách các phần tử trong mảng và được ngăn cách bởi dấu phẩy.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var arr1 = [5]
@@ -346,7 +346,7 @@ console.log(arr2)
 
 Strict theo nghĩa tiếng Việt là "nghiêm khắc". Strict Mode là một quy mẫu nghiêm khắc trong Javascript. Nếu như việc viết code bình thường là Normal mode, thì Strict Mode sẽ có thêm các quy định khác so với Normal mode. 
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 "use strict";
@@ -374,7 +374,7 @@ JavaScript là một ngôn ngữ rất lỏng lẻo. Biến chỉ được xác 
 
 Để kiểm tra kiểu dữ liệu của biến đó ta dùng __typeof__ trong Javascript.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var length = 16;
@@ -406,7 +406,7 @@ Javascript có những kiểu dữ liệu sau:
 - Object
 - Undefined
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var a = 5;
@@ -437,7 +437,7 @@ console.log(typeof e)
 
 Từ khóa __this__ dùng để chỉ đối tượng từ nơi nó được gọi.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var Student = {
@@ -471,7 +471,7 @@ console.log(Student.getName())
 
 Có thể sử dụng document để thay đổi style/class.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 document.getElementById("myId").style.fontSize = "20px";
@@ -491,7 +491,7 @@ Có các vòng lặp sau:
 - while
 - do-while loops
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var arr = ["apple", "banana", "mango", "cherry"]
@@ -532,7 +532,7 @@ do {
 
 Vì 3 và 2 là số nguyên, chúng sẽ cộng vào với nhau và kết quả là số. Còn 7 là một chuỗi, nên Javascipt sẽ hiểu thành nối chuỗi. Vì vậy, kết quả sẽ là 77.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 console.log(5 + 2 + "7");
@@ -550,7 +550,7 @@ console.log(5 + 2 + "7");
 
 __delete__ dùng để xóa các property cũng như các giá trị.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var student = { name: 'Lyly', age: 20 };
@@ -572,7 +572,7 @@ console.log(student)
 
 __pop()__ trong Javascript dùng để lấy phần tử cuối cùng trong mảng. Điều này thì trái ngược với hàm __shift()__.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var number = ["one", "two", "three", "four"]
@@ -592,7 +592,7 @@ console.log(number.shift())
 
 ## Câu 24: Kết quả in ra là gì?
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var myArray = [[[]]];
@@ -617,7 +617,7 @@ Từ khóa __let__ & __const__ được giới thiệu trong phiên bản ES6 v�
 
 - __let__: let được sử dụng để tạo một biến có thể thay đổi. Các biến có thể thay đổi là các biến bình thường như var có thể thay đổi bất kỳ số lượng thời gian nào.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 let name  = "Lyly";
@@ -644,7 +644,7 @@ console.log(age)
 
 Ta có thể thêm một thuộc tính vào một đối tượng bằng __object.property_name = value__, __delete object.property_name__ để xóa một thuộc tính.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 let user = new Object();
@@ -672,7 +672,7 @@ console.log(user);
 
 Dưới đây là một số cách:
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var array = [1, 2, 6, 5, 3, 2, 6];
@@ -710,7 +710,7 @@ console.log(
 
 Khi bạn khởi tạo ra một biến nhưng không gán giá trị cho nó thì sẽ là __undefined__. Còn __null__ là một __object__.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var a;
@@ -742,7 +742,7 @@ Các framework phổ biến nhất hiện nay:
 - QUnit
 - Jest
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 // Sử dụng Chai
@@ -761,9 +761,9 @@ expect(answer).to.equal(42);
 
 ## Câu 30: `export` và `import` là gì?
 
-__export__ hay __import__ là cách để ta tạo ra các module trong Javascript. Bằng cách đó, ta có thể chia các phần nhỏ trong dự án để dễ quản lý. __import__ cho phép ta lấy một số biến hoặc một phương thức nào đó của file. Còn __export__ là biến một file thành một module. Xem ví dụ để hiểu hơn.
+__export__ hay __import__ là cách để ta tạo ra các module trong Javascript. Bằng cách đó, ta có thể chia các phần nhỏ trong dự án để dễ quản lý. __import__ cho phép ta lấy một số biến hoặc một phương thức nào đó của file. Còn __export__ là biến một file thành một module. Xem Example để hiểu hơn.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 // person.js
@@ -796,7 +796,7 @@ console.log(age);
 
 Hàm __toISOString()__ được sử dụng để chuyển đổi ngày javascript thành tiêu chuẩn ISO. Nó chuyển đổi đối tượng Ngày JavaScript thành một chuỗi, sử dụng tiêu chuẩn ISO.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var date = new Date();
@@ -812,7 +812,7 @@ console.log(n);
 
 Hàm __Object.assign()__ được sử dụng để clone một đối tượng trong Javascript. Ngoài ra bạn cũng có thể sử dụng clone của __lodash__. Lodash là một framework sử lý mạnh mẽ mảng và object. Xem thêm tại [Lodash](https://lodash.com/)
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var x = { name: "Lyly" };
@@ -831,9 +831,9 @@ console.log(y)
 
 ## Câu 33: Cách để tạo mảng trong Javascript?
 
-Có 3 cách khác nhau để tạo mảng trong Javascript. Xem ví dụ
+Có 3 cách khác nhau để tạo mảng trong Javascript. Xem Example
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var arr1 = [1, 2, 3, 4];
@@ -873,7 +873,7 @@ Một số sự kiện chuột trong DOM như:
 
 ## Câu 35: Giá trị in ra màn hình là gì?
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 console.log(undefined * 2)
@@ -897,7 +897,7 @@ console.log("" * 2)
 
 Việc 018 - 017 trả về 3 là kết quả của chuyển đổi loại im lặng. Trong trường hợp này, ta nói về số bát phân.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 console.log(018 - 017)
@@ -919,7 +919,7 @@ Cả __test()__ và __exec()__ đều là biểu thức __RegExp__. [Xem chi ti�
 
 - Sử dụng __exec()__ sẽ search chuỗi trong theo giá trị ta truyền vô, nếu chuỗi đó tồn tại thì sẽ return về chuỗi đó, nếu không sẽ return về giá trị 'null'.
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 var str = "The best things in life are free";
@@ -943,7 +943,7 @@ console.log(res_exec)
 
 ## Câu 38: Kết quả in ra là gì?
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 setTimeout(function () {
@@ -976,7 +976,7 @@ Có những cách sau:
 - __getElementsByTagName()__ lấy một element bằng tên của __tag name__.
 - __querySelector()__ đây là function css style selector và sẽ return về giá trị đầu tiên.
 
-#### Ví dụ:
+#### Example:
 
 ```html
 <!DOCTYPE html>
@@ -1016,7 +1016,7 @@ Có 3 cách sau:
 - Internal
 - External
 
-#### Ví dụ:
+#### Example:
 
 ```html
 <!-- Inline -->
@@ -1046,7 +1046,7 @@ Một số framework UI nổi tiếng của Javascript hiện nay là:
 - Meteor
 - Ember
 
-#### Ví dụ:
+#### Example:
 
 ```javascript
 // React
