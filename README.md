@@ -1520,3 +1520,50 @@ _.map([4, 8], x => x * 2);
 </details>
 
 ---
+
+## Câu 59: Kết quả trả về là gì?
+
+Khi xét thuộc tính cho object, JavaScript sẽ ngầm định __stringify__ parameter. Trong trường hợp này, vì b và c là cả hai là object, nên sẽ được chuyển đổi thành "[Object Object]". Kết quả là, cả [b] và [c] đều tương đương với ["[Object Object]"] và có thể được sử dụng thay thế cho nhau. Do đó, khi ta tham chiếu [c] cũng giống như là tham chiếu [b].
+
+#### Ví dụ:
+
+```javascript
+var a = {},
+  b = { key: 'b' },
+  c = { key: 'c' };
+
+a[b] = 123;
+a[c] = 456;
+
+console.log(a[b]);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>456</code><br />
+<p>
+</details>
+
+---
+
+## Câu 60: Kết quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+var a = [1,2,3];
+
+a[10] = 99;
+
+console.log(a)
+console.log(a[6])
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>[ 1, 2, 3, <7 empty items>, 99 ]</code><br />
+<code>undefined</code>
+<p>
+</details>
+
+---
