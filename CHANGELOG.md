@@ -1,5 +1,16 @@
 # ChangeLog
 
+## [v0.0.5] 2019-07-17
+
+### Added
+
+- Copy question 59 to README_EN 
+- Translate question 4 and title question
+
+### Fixed
+
+- Change content question 4 in VI 
+
 ## [v0.0.4] 2019-07-16
 
 ### Added

@@ -86,7 +86,7 @@ console.log('log 2: ', number1 === number2)
 
 ## Câu 4: Negative Infinity là gì?
 
-__Negative Infinity__ là một số trong JavaScript có thể được bắt nguồn bằng cách chia số âm cho 0. Khi nào sử dung nó, khi nó là __một số__ hoặc __Number object__ và nó sẽ return về  __undefined__.
+__Negative Infinity__ là một số trong JavaScript có thể được bắt nguồn bằng cách chia số âm cho 0. Khi nào sử dụng nó, khi nó là __một số__ hoặc __Number object__ và nó sẽ return về  __undefined__.
 
 #### Ví dụ:
 
