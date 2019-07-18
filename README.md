@@ -1567,3 +1567,48 @@ console.log(a[6])
 </details>
 
 ---
+
+## Câu 61: Kết quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+var output = (function (x) {
+  delete x;
+  return x;
+})(0);
+
+console.log(output);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>0</code><br />
+Kết quả trả về là 0. Bởi vì delete dùng để xóa property của object. Nhưng ở đây x không phải là object, nó là biến local variable nên delete không thể xóa được.
+<p>
+</details>
+
+---
+
+## Câu 62: Kết quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+var x = 1;
+var output = (function () {
+  delete x;
+  return x;
+})();
+
+console.log(output);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>1</code><br />
+Kết quả trả về là 1. Bởi vì delete dùng để xóa property của object. Nhưng ở đây x không phải là object, nó là biến global variable có typeof number.
+<p>
+</details>
+
+---
