@@ -107,9 +107,9 @@ console.log(my_number)
 
 ---
 
-## Question 5: Cách để xử lý các ngoại lệ trong JavaScript?
+## Question 5: How to handling runtime errors in JavaScript?
 
-Sử dụng khối __try/catch__, chúng ta có thể xử lý các ngoại lệ trong JavaScript. JavaScript hỗ trợ các từ khóa try, catch, finally, throw để xử lý ngoại lệ.
+Using the __try / catch__ block, we can handle exceptions in JavaScript. JavaScript supports keywords try, catch, finally, throw to handle exceptions.
 
 #### Example:
 
@@ -145,9 +145,9 @@ console.log(check(55))
 
 ---
 
-## Question 6: Hàm isNaN() là gì?
+## Question 6: What is the use of isNaN function?
 
-Hàm __isNaN()__ trả về true nếu giá trị của biến __không phải__ là một số.
+__isNaN()__ function returns true if the argument is __not__ a number otherwise it is false.
 
 #### Example:
 
@@ -174,24 +174,24 @@ console.log(isNaN(undefined))
 
 ---
 
-## Question 7: Cách để comment trong Javascript?
+## Question 7: Which symbol is used for comments in Javascript?
 
-Sử dụng __//__ cho một dòng
+Use __//__ for single line
 
-hoặc 
+or 
 
-sử dụng __/* nội dung */__ cho nhiều dòng
+use __/* nội dung */__ for multi line
 
 #### Example:
 
 ```javascript
-// Khai báo biến
+// Declare variable
 var number = 2;
 
 /*
-  Đây là cách
-  để comment
-  nhiều dòng
+  This is case
+  use comment
+  multi line
 */
 var girl_friend = null;
 ```
@@ -1565,6 +1565,51 @@ console.log(a[6])
 <p>
 <code>[ 1, 2, 3, <7 empty items>, 99 ]</code><br />
 <code>undefined</code>
+<p>
+</details>
+
+---
+
+## Câu 61: Kết quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+var output = (function (x) {
+  delete x;
+  return x;
+})(0);
+
+console.log(output);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>0</code><br />
+Kết quả trả về là 0. Bởi vì delete dùng để xóa property của object. Nhưng ở đây x không phải là object, nó là biến local variable nên delete không thể xóa được.
+<p>
+</details>
+
+---
+
+## Câu 62: Kết quả trả về là gì?
+
+#### Ví dụ:
+
+```javascript
+var x = 1;
+var output = (function () {
+  delete x;
+  return x;
+})();
+
+console.log(output);
+```
+
+<details><summary><b>Đáp án:</b></summary>
+<p>
+<code>1</code><br />
+Kết quả trả về là 1. Bởi vì delete dùng để xóa property của object. Nhưng ở đây x không phải là object, nó là biến global variable có typeof number.
 <p>
 </details>
 
